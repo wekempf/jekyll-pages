@@ -3,6 +3,7 @@ environment:
     - ruby_version: "23"
 
 install:
+  - ps: $env:PATH="C:\Ruby$($env:ruby_version)\bin;$env:PATH"
   - ruby --version
   - gem update --system
   - gem install jekyll
