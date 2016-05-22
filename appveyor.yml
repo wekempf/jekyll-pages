@@ -4,9 +4,11 @@ environment:
 
 install:
   - ps: $env:PATH="C:\Ruby$($env:ruby_version)\bin;$env:PATH"
-  - ruby --version
+  - ruby -v
   - gem update --system
+  - gem -v
   - gem install jekyll
+  - jekyll -v
 
 branches:
   only:
