@@ -1,0 +1,9 @@
+install:
+  - gem update --system
+  - gem install jekyll
+
+branches:
+  only:
+    - source
+
+build_script: echo 'built'
