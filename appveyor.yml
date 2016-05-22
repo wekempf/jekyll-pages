@@ -15,4 +15,4 @@ branches:
     - source
 
 build_script:
-  - echo 'built'
+  - jekyll build
